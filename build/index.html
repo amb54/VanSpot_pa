@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/_settings.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>VanSpot</title>
+  </head>
+
+  <body>
+    <header>
+      <button id='home-button' class='button small'>HOME</button>
+      <button id='about-button' class='button small'>ABOUT</button>
+      <button id='newshipment-button' class='button small'>NEW SHIPMENT</button>
+      <button id='previous-shipment-button' class='button small'>PREVIOUS SHIPMENTS</button>
+    </header>
+    <main>
+      <section id = 'page'></section>
+      <section id = 'csv'></section>
+    </main>
+
+    <!--TEMPLATES -->
+    <!-- <script id="something-template" type="text/template"></script> -->
+    <script id="home-page-template" type="text/template">
+      <section class = 'row'>
+        <img id='home_image' src='https://docs.google.com/uc?id=0B-P53A7R7CKIR3VsLWh0a2JFWTQ' alt="Van with drones" />
+      </section>
+    </script>
+
+
+
+    <script id="about-page-template" type="text/template">
+      <section>
+        <h4>About this App</h4>
+      </section>
+    </script>
+
+
+    <script id="shipment-template" type="text/template">
+      <tr id = 'shipment-list' class = 'row'>
+        <td class='large-2 medium-2 column'>
+          <div>Shipment #</div>
+        </td >
+        <td class='large-3 medium-3 column'>
+          <div><%-shipment.pk%></div>
+        </td >
+        <td class='large-2 medium-2 column end'>
+          <button id='shipment-map' class='button tiny'>MAP</button>
+        </td>
+      </tr>
+    </script>
+
+
+    <script id="map-template" type="text/template">
+      <h4 class = 'row'>Shipment# <%-shipment_id%></h4>
+      <section class = 'row'>
+        <div id = 'map-canvas1' class='columns large-12 medium-12 small-12 '>
+        </div>
+      </section>
+    </script>
+
+
+    <script id="csv-template" type="text/template">
+      <section class = 'row'>
+        <div id = 'enter-addresses-form1' class='column large-12 medium-12 small-12'>
+          <input type="file" id="csvfile">
+          <div class = 'row'>
+            <button id = "save-csv" class='button'>Save</button>
+            <button id = "cancel-csv" class='button'>Cancel</button>
+          </div>
+        </div>
+      </section>
+    </script>
+
+
+    <!-- SRC  -->
+    <script src="/app.bundle.js" charset="utf-8"></script>
+    <!-- NOTE: There is a KEY here -->
+
+    <script>
+      function initMap() {}
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?&callback=initMap"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+@include foundation-everything;
+
+main {
+    /*background: lightblue;*/
+}
+
+header {
+  /*background-color: lightgreen;*/
+  background-color: lightgrey;
+  padding: 0.5rem;
+}
+
+#completed-checkbox {
+  display: inline;
+}
+
+label {
+  display: inline;
+}
+
+button.success {
+  margin-right: 1.2rem;
+  display: inline;
+}
+
+aside.create-tasklist {
+  background-color: navy;
+  color: #FFFFFF;
+}
+aside label {
+  color: #FFFFFF;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+div {
+  display: inline;
+}
+/*
+* {
+  border-style: solid;
+}
+*/
+.table-list {
+  margin-bottom: 0.25rem;
+  background-color: white;
+}
+
+.button {
+  margin: 0;
+  border-radius: 0.5rem;
+}
+
+#add-form, #movie-checkout-form {
+  z-index: 10;
+  position: fixed;
+  width: 80%;
+  /*height: 600px;*/
+  top: 8%;
+  right: 15%;
+  background-color: lightgreen;
+  text-align: left;
+  border: 0.1em solid white;
+  margin-left: 10%;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+table {
+  margin: 0;
+}
+
+table.table-list {
+  padding: 1rem;
+}
+
+img {
+  border-radius: 1rem;
+}
+
+#map-canvas{
+   /*width: 50%;*/
+   width: 400px;
+   height: 400px;
+   background-color: grey;
+ }
+
+ #map-canvas1 {
+   width: 800px;
+   height: 500px;
+   background-color: grey;
+ }
+
+
+
+#enter-addresses-form  {
+  margin: 2rem;
+}
+
+#page, header {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+#home_image {
+  width: 100%;
+  padding-right: 15rem;
+  /*padding: 0rem 10rem 20rem 10rem;*/
+}
+
+
+
+#csv {
+  z-index: 10;
+  position: fixed;
+  width: 55%;
+  /*height: 600px;*/
+  top: 3%;
+  right: 5%;
+  background-color: lightyellow;
+  /*opacity: 0.8;*/
+  text-align: left;
+  border: 0.1em solid grey;
+  margin-left: 10%;
+  border-radius: 1rem;
+  padding: 1rem;
+}
